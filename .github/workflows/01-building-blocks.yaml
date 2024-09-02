@@ -1,0 +1,15 @@
+name: "01 - Building Blocks"
+
+on: [push, workflow_dispatch]
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Echo"
+              run: echo "Hello, World!"
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Echo"
+              run: echo "Goodbye, World!"
